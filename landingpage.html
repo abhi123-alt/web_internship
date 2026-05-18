@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <style>
+        /* Reset */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background: transparent;
+          padding: 15px 30px;
+          transition: background 0.3s ease, box-shadow 0.3s ease;
+          z-index: 1000;
+        }
+
+        nav.scrolled {
+          background: #333;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        nav ul {
+          display: flex;
+          justify-content: flex-end;
+          list-style: none;
+        }
+
+        nav ul li {
+          margin-left: 20px;
+        }
+
+        nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+          transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        nav ul li a:hover {
+          color: #ff9800;
+          border-bottom: 2px solid #ff9800;
+        }
+
+        /* Hero Section */
+        .hero {
+          height: 100vh;
+          background: url('https://picsum.photos/1600/900') no-repeat center center/cover;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          text-align: center;
+        }
+
+        .hero h1 {
+          font-size: 3rem;
+          background: rgba(0,0,0,0.5);
+          padding: 20px;
+          border-radius: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+          nav ul {
+            flex-direction: column;
+            align-items: center;
+          }
+          nav ul li {
+            margin: 10px 0;
+          }
+        }
+    </style>
+</head>
+<body>
+
+<nav id="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Welcome to My Landing Page</h1>
+</section>
+
+<section id="about" style="height:100vh; padding:50px; background:#f4f4f4;">
+    <h2 style="text-align:center; margin-bottom:30px;">About Me</h2>
+    <div style="max-width:800px; margin:auto; text-align:center;">
+        <img src="https://picsum.photos/206" alt="My Photo"
+             style="border-radius:50%; width:150px; height:150px; margin-bottom:20px;">
+        <p style="font-size:1.2rem; color:#333;">
+            Hi, I'm Abhishek 👋 — a computer science enthusiast with a strong interest in
+            <b>computer hardware, programming, and problem solving</b>.
+            I enjoy working on projects that combine theory with hands‑on troubleshooting,
+            whether it’s building responsive web pages, debugging code, or optimizing systems.
+        </p>
+        <p style="font-size:1rem; color:#555;">
+            I am a second-year student with a strong interest in technology, problem-solving, and continuous learning.
+            I enjoy building practical projects that help me apply theoretical knowledge to real-world challenges.
+            I am currently improving my skills in web development and software fundamentals,
+            with a focus on writing clean, efficient code. I believe in learning by doing and constantly pushing myself to grow both technically and personally.
+        </p>
+    </div>
+</section>
+
+<section id="services"  style="height:100vh; padding:50px; background:#f4f4f4;">
+    <h2 style="text-align:center; margin-bottom:30px;">Services</h2>
+    <div style="max-width:800px; margin:auto; text-align:center;">
+        <img src="https://picsum.photos/204" alt="My Photo"
+             style="border-radius:50%; width:150px; height:150px; margin-bottom:20px;">
+        <p style="font-size:1.2rem; color:#333;">
+           <b> 💻 Java Development (Core) </b>
+         </p>
+            Building logical and structured applications using core Java concepts like OOPs, collections, and exception handling.
+        <p style="font-size:1.2rem; color:#333;">
+            <b> 🧠 Data Structures & Algorithms</b>
+              </p>
+             Strong foundation in DSA with regular practice to improve problem-solving, logic building, and code efficiency.
+        <p style="font-size:1.2rem; color:#333;">
+            <b>🌐 Web Development (Beginner)</b>
+           </p>
+            Creating responsive and user-friendly websites using HTML, CSS, and JavaScript while learning modern web development practices.
+        <p style="font-size:1.2rem; color:#333;">
+        <b>📁 Academic & Personal Projects</b>
+        </p>
+            Working on small projects to apply theoretical knowledge to real-world use cases and improve practical skills.
+        <p style="font-size:1.2rem; color:#333;">
+        <b>🚀 Continuous Learning</b></p>
+            Actively learning new technologies, improving fundamentals, and adapting quickly through consistent practice and feedback.
+    </div>
+</section>
+
+<section id="contact" style="height:100vh; padding:50px; background:#f4f4f4;">
+    <h2 style="text-align:center; margin-top:150px;">Contact Me</h2>
+
+    <div style="max-width:600px; margin:auto; text-align:center;">
+        <p style="font-size:1.2rem;">
+            Let’s connect through my social profiles!
+        </p>
+
+        <!-- Social Media Logos -->
+        <div style="margin-top:50px;">
+            <!-- Gmail -->
+            <a href="mailto:abhishekbaba5547@gmail.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
+                     alt="Gmail" style="width:30px; height:30px; margin:0 10px;">
+            </a>
+            <!-- Instagram -->
+            <a href=https://instagram.com/abhi_g47" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                     alt="Instagram" style="width:30px; height:30px; margin:0 10px;">
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/atith-abhishek-06bb51225" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                     alt="LinkedIn" style="width:30px; height:30px; margin:0 10px;">
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://x.com/Algoabhi" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                     alt="Twitter" style="width:30px; height:30px; margin:0 10px;">
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/abhi123-alt" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                     alt="GitHub" style="width:30px; height:30px; margin:0 10px;">
+            </a>
+        </div>
+    </div>
+</section>
+<script>
+    // Change nav style on scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+</script>
+
+</body>
+</html>
